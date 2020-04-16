@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["home"],{bb51:function(e,n,t){"use strict";t.r(n);var s=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"home"},[e._v(" xxx ")])},a=[],l={name:"Home"},o=l,c=t("2877"),u=Object(c["a"])(o,s,a,!1,null,null,null);n["default"]=u.exports}}]);
+//# sourceMappingURL=home.462edc34.js.map
