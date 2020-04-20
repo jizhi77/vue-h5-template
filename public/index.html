@@ -7,17 +7,19 @@
     <meta name="author" content="Zero, jizhi.w77@foxmail.com"/>
     <meta name="description" content="不超过150个字符"/>
     <meta name="keywords" content=""/>
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
-
     <meta name="theme-color" content="#563d7c">
     <meta name="apple-mobile-web-app-title" content="标题">
 
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="apple-touch-icon" href="icon.png">
+
     <link rel="stylesheet" href="<%= BASE_URL %>css/normalize.css">
     <link rel="stylesheet" href="<%= BASE_URL %>css/main.css">
+
+    <script src="<%= BASE_URL %>libs/vconsole.min.js"></script>
+    <script src="<%= BASE_URL %>libs/console-noop.js"></script>
 </head>
 <body>
 <!--[if IE]>
@@ -26,29 +28,7 @@
 
 <div id="app"></div>
 <script>
-  // Avoid `console` errors in browsers that lack a console.
-  (function () {
-    var method
-    var noop = function () {}
-    var methods = [
-      'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-      'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-      'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-      'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn',
-    ]
-    var length = methods.length
-    var console = (window.console = window.console || {})
-
-    while (length--) {
-      method = methods[length]
-
-      // Only stub undefined methods.
-      if (!console[method]) {
-        console[method] = noop
-      }
-    }
-  }())
-
+  const vConsole = new VConsole()
 </script>
 </body>
 </html>
