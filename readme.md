@@ -4,7 +4,8 @@
 
 ## Feature
 
-- 有赞 [Vant](https://youzan.github.io/vant/#/zh-CN/) 组件库
+- [x] 有赞 [Vant](https://youzan.github.io/vant/#/zh-CN/) 组件库
+- [x] 开发模式和环境变量
 - [ ] robots.txt
 
 
