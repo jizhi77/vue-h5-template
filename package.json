@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "NODE_ENV=12 vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "deploy": "sh deploy.sh 'deploy'",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "vant": "^2.6.1",
     "vue": "^2.6.11",
@@ -40,7 +41,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,vue}": [
+    "./src/**/*.{js,jsx,vue}": [
       "vue-cli-service lint --fix",
       "prettier --write",
       "git add"
