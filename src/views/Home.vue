@@ -1,10 +1,7 @@
 <template>
   <div class="page-home-wrap">
     <h4>Welcome U, my Friend</h4>
-    <!--        <div class="taichi"></div>-->
-    <div>NODE_ENV:{{ NODE_ENV }}</div>
-    <div>VUE_APP_NAME:{{ VUE_APP_NAME }}</div>
-    <div>NAME：{{ NAME }}</div>
+    <div class="taichi"></div>
   </div>
 </template>
 
@@ -19,11 +16,7 @@ export default {
   },
 
   data() {
-    return {
-      NODE_ENV: process.env.NODE_ENV,
-      VUE_APP_NAME: process.env.VUE_APP_NAME,
-      NAME: process.env.foo
-    };
+    return {};
   }
 };
 </script>

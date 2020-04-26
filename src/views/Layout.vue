@@ -13,7 +13,7 @@
           slot="icon"
           slot-scope="props"
           :src="
-            require('@/images/tabbar/manage' +
+            require('@images/tabbar/manage' +
               (props.active ? '-active' : '') +
               '.png')
           "
@@ -68,6 +68,6 @@ export default {
     $route: function() {
       this.active = this.$route.fullPath.replace("/", "");
     }
-  },
+  }
 };
 </script>
