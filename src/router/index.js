@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 import my from "./modules/my";
+import message from "./modules/message";
+import Layout from "@views/Layout.vue";
 
 Vue.use(VueRouter);
 
@@ -9,14 +11,25 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: () => import(/* webpackChunkName: "home"  */ "@/views/Home")
+    component: Layout,
+    children: [
+      {
+        path: "",
+        component: () => import(/* webpackChunkName: "home"  */ "@/views/Home")
+      }
+    ]
   },
-  my
+  my,
+  message,
+  {
+    path: "*",
+    name: "NotFound",
+    component: () => import(/* webpackChunkName: 404  */ "@/views/404")
+  }
 ];
 
 const router = new VueRouter({
-  routes,
-  mode: "history"
+  routes
 });
 
 export default router;

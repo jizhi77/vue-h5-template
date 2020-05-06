@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <meta name="author" content="Zero, jizhi.w77@foxmail.com"/>
-    <meta name="description" content="不超过150个字符"/>
+    <meta name="description" content="网站描述"/>
     <meta name="keywords" content=""/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
@@ -15,20 +15,22 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="apple-touch-icon" href="icon.png">
 
-    <link rel="stylesheet" href="<%= BASE_URL %>css/normalize.css">
-    <link rel="stylesheet" href="<%= BASE_URL %>css/main.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/normalize.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>assets/css/main.css">
 
-    <script src="<%= BASE_URL %>libs/vconsole.min.js"></script>
-    <script src="<%= BASE_URL %>libs/console-noop.js"></script>
+    <script src="<%= BASE_URL %>assets/libs/vconsole.min.js"></script>
+    <script src="<%= BASE_URL %>assets/libs/console-noop.js"></script>
 </head>
 <body>
 <!--[if IE]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
 <div id="app"></div>
-
 <script>
-  new VConsole()
+  // FIXME：线上环境关闭
+  const hostName = ''
+  if (window.location.hostname !== hostName)
+    new VConsole()
 </script>
 </body>
 </html>

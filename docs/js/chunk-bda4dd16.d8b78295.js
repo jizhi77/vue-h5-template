@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-bda4dd16"],{"0bc3":function(n,t,a){},2675:function(n,t,a){"use strict";var c=a("0bc3"),e=a.n(c);e.a},"2d79":function(n,t,a){"use strict";a.r(t);var c=function(){var n=this,t=n.$createElement,a=n._self._c||t;return a("div",{staticClass:"page-my-upload-index-wrap"},[n._v(" 我的上传头像 ")])},e=[],u={},s=u,i=(a("2675"),a("2877")),l=Object(i["a"])(s,c,e,!1,null,null,null);t["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-bda4dd16.d8b78295.js.map
